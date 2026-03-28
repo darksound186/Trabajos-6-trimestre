@@ -1,6 +1,10 @@
 import { Routes } from '@angular/router';
-import {} from './pages/inicio/inicio';
-import {} from './pages/ejercicios/ejercicios';
-import {} from './pages/contacto/contacto';
+import { Inicio } from './pages/inicio/inicio';
+import { Ejercicios } from './pages/ejercicios/ejercicios';
+import { Contacto } from './pages/contacto/contacto';
+import { FormularioComponent } from './forms/formulario/formulario';
 
-export const routes: Routes = [];
+export const routes: Routes = [
+  { path: 'formulario', component: FormularioComponent },
+  { path: '', redirectTo: 'formulario', pathMatch: 'full' }
+];
