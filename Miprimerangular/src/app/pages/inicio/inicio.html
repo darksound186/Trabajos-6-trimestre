@@ -1,1 +1,31 @@
-<p>inicio works!</p>
+<h1>Hola, este es mi primer proyecto</h1>
+<h2>
+    Bienvenidos Adso
+</h2>
+<h2>{{ bienvenidos }}</h2>
+
+<!--De aqui para abajo una lista en directivas Angular-->
+<ul>
+    <li>Cuadernos</li>
+    <li>Gorras</li>
+    <li>gafas</li>
+</ul>
+<br>
+<ul> 
+    <li *ngfor="let objeto of estudiantes">{{ objeto }}
+        
+    </li>
+</ul>
+<br><h2>Funciono hpta </h2>
+<ul>
+  @for(objeto of estudiantes; track objeto){
+      <li>{{ objeto }} </li>
+  }
+</ul>
+<h1>Mi aplicación</h1>
+
+<a routerLink="/formulario">
+  <button>Ir al formulario</button>
+</a>
+
+<hr>
